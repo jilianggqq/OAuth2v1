@@ -60,7 +60,7 @@ body {
 				 * initial visit to the page
 				 */
 				out.println("<a href='" + helper.buildLoginUrl()
-						+ "'>log in with google</a>");
+						+ "'>log in with google</a> "+helper.getStateToken());
 						
 				/*
 				 * set the secure state token in session to be able to track what we sent to google
